@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ernährungskonzept</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>   
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <nav class="navbar" id="navbar">
+      <div class="brand-title">FOODCOACH</div>
+     <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a>About me</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+     </div>
+     <div>
+      <input type="checkbox" class="darktoggle" id="darktoggle" name="darktoggle">
+      <label class="darklabel" for="darktoggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+     <div class="ball"></div>
+      </label>
+     </div>
+    </nav>
+    <div class="big-image">
+      <div class="overlay">
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div id="ernaehrungstool" class="ernaehrungstool">
+      <div id="tool-steps" class="tool-steps">
+        <div class="step1 highlight">
+          <span id="step1">1 Ziele</span>
+        </div>
+        <div class="step2">
+          <span id="step2">2 Körperdaten</span>
+        </div>
+        <div class="step3">
+          <span id="step3">3 Aktivitätslevel</span>
+        </div>
+        <div class="step4">
+          <span>4 Essgewohnheiten</span>
+        </div>
+        <div class="step5">
+          <span>5 Kalorien</span>
+        </div>
+        <div class="step6">
+          <span>6 Zusatzinfos</span>
+        </div>
+        <div class="step7">
+          <span>7 Planerstellung</span>
+        </div>
+      </div>
+    <section id="section-ziel" class="section-ziel">
+      <div class="tool-einleitung" id="tool-einleitung">
+        <h1>Klicke auf ein Ziel um deine Beratung zu starten!</h1>
+      </div>
+      <div class="tool-ziel">
+        <div class="tool-label"><h2>Ziel</h2></div>
+        <div class="tool-sublabel"><h3>Was ist dein Ziel?</h3></div>
+        <div class="tool-container3 ziel-radio">
+          <ul class="" id="ziel">
+            <li class="ziel1">
+              <input
+                name="ziel"
+                type="radio"
+                value='<img src="https://web-spotlight.de/wp-content/uploads/performance.png" alt="Performance steigern"></img><p>Performance steigern'
+                id="ziel1"
+              />
+              <label for="ziel1" id="ziel1"
+                ><img
+                  src="https://web-spotlight.de/wp-content/uploads/performance.png"
+                  alt="Performance steigern"
+                />
+                <p>Performance steigern</p></label
+              >
+            </li>
+            <li class="ziel2">
+              <input
+                name="ziel"
+                type="radio"
+                value='<img src="https://web-spotlight.de/wp-content/uploads/gewicht-managen.png" alt="Gewicht managen"></img><p>Gewicht managen'
+                id="ziel2"
+              />
+              <label for="ziel2" id="ziel2"
+                ><img
+                  src="https://web-spotlight.de/wp-content/uploads/gewicht-managen.png"
+                  alt="Gewicht managen"
+                />
+                <p>Gewicht managen</p></label
+              >
+            </li>
+            <li class="ziel3">
+              <input
+                name="ziel"
+                type="radio"
+                value='<img src="https://web-spotlight.de/wp-content/uploads/wohlbefinden.png" alt="Wohlbefinden steigern"></img><p>Wohlbefinden steigern'
+                id="ziel3"
+              />
+              <label for="ziel3" id="ziel3"
+                ><img
+                  src="https://web-spotlight.de/wp-content/uploads/wohlbefinden.png "
+                  alt="Wohlbefinden steigern"
+                />
+                <p>Wohlbefinden steigern</p></label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="tool-performance unsichtbar" id="tool-performance">
+          <div class="tool-label"><h2>Performance steigern</h2></div>
+          <div class="tool-sublabel">
+            <h3>In welcher Kategorie möchtest du deine Leistung verbessern?</h3>
+          </div>
+          <div class="tool-container3 performance-radio">
+            <ul class="" id="performance">
+              <li class="performance1">
+                <input
+                  name="performance"
+                  type="radio"
+                  value="250"
+                  id="performance1"
+                /><label for="performance1" id="performance1"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/kraftsport.png"
+                    alt="Kraftsport"
+                  />
+                  <p>Kraftsport</p></label
+                >
+              </li>
+              <li class="performance2">
+                <input
+                  name="performance"
+                  type="radio"
+                  value="250"
+                  id="performance2"
+                /><label for="performance2" id="performance2"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/ausdauersport.png"
+                    alt="Ausdauer"
+                  />
+                  <p>Ausdauer</p></label
+                >
+              </li>
+              <li class="performance3">
+                <input
+                  name="performance"
+                  type="radio"
+                  value="250"
+                  id="performance3"
+                /><label for="performance3" id="performance3"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/teamsport.png"
+                    alt="Teamsport"
+                  />
+                  <p>Spiele / Teamsport</p></label
+                >
+              </li>
+              <li class="performance4">
+                <input
+                  name="performance"
+                  type="radio"
+                  value="250"
+                  id="performance4"
+                /><label for="performance4" id="performance4"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/kampfsport.png"
+                    alt="Kampfsport"
+                  />
+                  <p>Kampfsport</p></label
+                >
+              </li>
+              <li class="performance5">
+                <input
+                  name="performance"
+                  type="radio"
+                  value="100"
+                  id="performance5"
+                /><label for="performance5" id="performance5"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/gehirnleistung.png"
+                    alt="Gehirnleistung"
+                  />
+                  <p>Gehirnleistung</p></label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tool-gewichtmanagement unsichtbar" id="tool-gewichtmanagement">
+          <div class="tool-label"><h2>Gewicht managen</h2></div>
+          <div class="tool-sublabel">
+            <h3>Was ist dein Gewichtsziel?</h3>
+          </div>
+          <div class="tool-container3 gewichtmanagement-radio">
+            <ul class="" id="gewichtmanagement">
+              <li class="gewichtmanagement1">
+                <input
+                  name="gewichtmanagement"
+                  type="radio"
+                  value="-250"
+                  id="gewichtmanagement1"
+                /><label for="gewichtmanagement1" id="gewichtmanagement1"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/abnehmen.png"
+                    alt="Abnehmen"
+                  />
+                  <p>Abnehmen</p></label
+                >
+              </li>
+              <li class="gewichtmanagement2">
+                <input
+                  name="gewichtmanagement"
+                  type="radio"
+                  value="-250"
+                  id="gewichtmanagement2"
+                /><label for="gewichtmanagement2" id="gewichtmanagement2"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/definieren.png"
+                    alt="Muskeln definieren"
+                  />
+                  <p>Muskeln definieren</p></label
+                >
+              </li>
+              <li class="gewichtmanagement3">
+                <input
+                  name="gewichtmanagement"
+                  type="radio"
+                  value="0"
+                  id="gewichtmanagement3"
+                /><label for="gewichtmanagement3" id="gewichtmanagement3"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/gewichthalten.png"
+                    alt="Gewicht halten"
+                  />
+                  <p>Gewicht halten</p></label
+                >
+              </li>
+              <li class="gewichtmanagement4">
+                <input
+                  name="gewichtmanagement"
+                  type="radio"
+                  value="250"
+                  id="gewichtmanagement4"
+                /><label for="gewichtmanagement4" id="gewichtmanagement4"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/muskelaufbau.png"
+                    alt="Muskeln aufbauen"
+                  />
+                  <p>Muskeln aufbauen</p></label
+                >
+              </li>
+              <li class="gewichtmanagement5">
+                <input
+                  name="gewichtmanagement"
+                  type="radio"
+                  value="450"
+                  id="gewichtmanagement5"
+                /><label for="gewichtmanagement5" id="gewichtmanagement5"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/zunehmen.png"
+                    alt="Zunehmen"
+                  />
+                  <p>Zunehmen</p></label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tool-wohlbefinden unsichtbar" id="tool-wohlbefinden">
+          <div class="tool-label"><h2>Wohlbefinden steigern</h2></div>
+          <div class="tool-sublabel">
+            <h3>Inwiefern möchtest du konkret dein Wohlbefinden steigern?</h3>
+          </div>
+          <div class="tool-container3 wohlbefinden-radio">
+            <ul class="" id="wohlbefinden">
+              <li class="wohlbefinden1">
+                <input
+                  name="wohlbefinden"
+                  type="radio"
+                  value="250"
+                  id="wohlbefinden1"
+                /><label for="wohlbefinden1" id="wohlbefinden1"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/vitalitaet.png"
+                    alt="Vitalität steigern"
+                  />
+                  <p>Vitalität steigern</p></label
+                >
+              </li>
+              <li class="wohlbefinden2">
+                <input
+                  name="wohlbefinden"
+                  type="radio"
+                  value="0"
+                  id="wohlbefinden2"
+                /><label for="wohlbefinden2" id="wohlbefinden2"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/ausgewogen.png"
+                    alt="Ausgewogen ernähren"
+                  />
+                  <p>Ausgewogen ernähren</p></label
+                >
+              </li>
+              <li class="wohlbefinden3">
+                <input
+                  name="wohlbefinden"
+                  type="radio"
+                  value="250"
+                  id="wohlbefinden3"
+                /><label for="wohlbefinden3" id="wohlbefinden3"
+                  ><img
+                    width="64"
+                    height="64"
+                    src="https://web-spotlight.de/wp-content/uploads/regeneration.png"
+                    alt="Regeneration fördern"
+                  />
+                  <p>Regeneration fördern</p></label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tool-kalorienverbrauchfrage unsichtbar" id="tool-kalorienverbrauchfrage">
+          <div class="tool-label"><h2>Kalorienverbrauch</h2></div>
+          <div class="tool-sublabel">
+            <h3>Weißt du, wie viele Kalorien du insgesamt über den Tag verbrennst?</h3>
+          </div>
+          <div class="tool-abfrage">
+            <ul class="mehrabfrage" id="abfrage">
+              <li class="abfrage1">
+                <input
+                  name="abfrage"
+                  type="radio"
+                  value="0"
+                  id="abfrage1"
+                  class="mehrauswahl"
+                  checked
+                /><label for="abfrage1" id="abfrage1">
+                  <p>Nein, lass uns den Verbrauch berechnen</p></label>
+              </li>
+              <li class="abfrage2">
+                <input
+                  name="abfrage"
+                  type="radio"
+                  value="1"
+                  id="abfrage2"
+                  class="mehrauswahl"
+                /><label for="abfrage2" id="abfrage2" onClick="">
+                  <p>Ja, ich kenne meinen Kalorienverbrauch</p></label>
+              </li>
+          </div>
+          <span id="rechnungohneinput" class="unsichtbar"></span>
+          <br />    
+          <input id='rechnung' type="text" class="unsichtbar" name="rechnung"  placeholder="Berechnung"/>
+        </div>
+      </div>
+      <button id="section1-2" class="btn section1-2">Weiter</button>
+    </section>
+    <section id="section-koerper" class="section-koerper unsichtbar">
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <div><p>TEST</p></div>
+      <button id="section2-1" class="btn-back section2-1">Zurück</button>
+      <button id="" class="btn section2-3">Weiter</button>
+    </section>
+    <section id="section-aktivitaet" class="section-aktivitaet unsichtbar">
+    </section>
+    </div>
+    <div class="spacer"></div>
+  </body>
+</html>
