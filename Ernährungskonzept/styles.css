@@ -26,7 +26,6 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
 .overlay {
   position: absolute;
   top: 0;

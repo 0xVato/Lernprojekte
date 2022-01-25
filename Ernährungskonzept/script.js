@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-
+//
 //Toggle-Funktion des Darkmodes
 //
 //
